@@ -4,4 +4,5 @@ The Blood Bank Management System is a web-based application that streamlines the
 ## Tech Stack
 
 **UI:** HTML, CSS
+
 **Backend:** Django framework, Python
