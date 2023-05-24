@@ -10,6 +10,6 @@ The Blood Bank Management System is a web-based application that streamlines the
 **Backend:** Django framework, Python
 
 ## Flowchart
-<div align="center">
+
 ![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/ea3a25be-8bea-4112-a142-e95c6eaf5044)
-</div>
+
