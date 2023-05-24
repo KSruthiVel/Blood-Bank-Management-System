@@ -13,3 +13,5 @@ The Blood Bank Management System is a web-based application that streamlines the
 
 ![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/ea3a25be-8bea-4112-a142-e95c6eaf5044)
 
+## Screenshots
+![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/f7c3195a-0026-428c-aa45-89bc81dc2bf8)
