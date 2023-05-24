@@ -19,10 +19,10 @@ The Blood Bank Management System is a web-based application that streamlines the
 
 **Patient Module**
 ![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/794fa793-6673-4a03-9c38-f66669ded9e6)
-![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/556c1857-f83e-4c3c-9dde-afb8564a08d5)
-![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/327d152a-be36-458b-91d6-e721a5ef45b8)
-![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/0e965056-a0cb-4bc5-9816-d9b59fda2375)
-![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/1cdf36a8-f0d9-490e-9b37-d236de5a7749)
+![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/5ff5cc4e-6e7d-4bd5-aad1-f3b6a8653692)
+![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/361eaea6-5e6a-4939-a6a7-481ea24b72bc)
+![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/0c2234fa-74f2-4eca-a79e-e066a75e9cea)
+![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/d98e9da8-bdf7-4f7e-b5a7-d5546e6b729e)
 
 **Donor Module**
 ![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/361ae4c2-f4c1-4899-bceb-64aa0083f200)
