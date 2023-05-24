@@ -1,0 +1,151 @@
+{% extends 'blood/adminbase.html' %}
+{% block content %}
+{% load static%}
+<head>
+    <link href="{% static "css/card.css" %}" rel="stylesheet" media="all">
+
+</head>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="counter">
+                <div class="counter-icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                
+                
+                <h3>A+</h3>
+                <span class="counter-value">{{A1.unit}} U</span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="counter orange">
+                <div class="counter-icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                
+                <h3>O+</h3>
+                <span class="counter-value">{{O1.unit}} U</span>
+            </div>
+        </div>
+	    <div class="col-sm-3">
+            <div class="counter orange">
+                <div class="counter-icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                <h3>B+</h3>
+                <span class="counter-value">{{B1.unit}} U</span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="counter orange">
+                <div class="counter-icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                <h3>AB+</h3>
+                <span class="counter-value">{{AB1.unit}} U</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="counter">
+                <div class="counter-icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                <h3>A-</h3>
+                <span class="counter-value">{{A2.unit}} U</span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="counter orange">
+                <div class="counter-icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                <h3>O-</h3>
+                <span class="counter-value">{{O2.unit}} U</span>
+            </div>
+        </div>
+	    <div class="col-sm-3">
+            <div class="counter orange">
+                <div class="counter-icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                <h3>B-</h3>
+                <span class="counter-value">{{B2.unit}} U</span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="counter orange">
+                <div class="counter-icon">
+                    <i class="fa fa-tint"></i>
+                </div>
+                <h3>AB-</h3>
+                <span class="counter-value">{{AB2.unit}} U</span>
+            </div>
+        </div>
+
+    </div>
+
+<hr>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-light">
+          <div class="card-body">
+              <div class="blood">
+                  <i class="fas fa-users"></i>
+              </div><br>
+              <div>
+                  Total Donors <br>
+                  {{totaldonors}}
+              </div>                            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <div class="blood">
+                      <i class="fas fa-spinner"></i>
+                  </div><br>
+                  <div>
+                      Total Requests <br>
+                     {{totalrequest}}
+                  </div>                            
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <div class="blood">
+                      <i class="far fa-check-circle"></i>
+                  </div><br>
+                  <div>
+                      Approved Requests <br>
+                      {{totalapprovedrequest}}
+                  </div>                            
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <div class="blood">
+                      <i class="fas fa-tint xyz"></i>
+                  </div><br>
+                  <div>
+                      Total Blood Unit (in ml) <br>
+                      {{totalbloodunit}}
+                  </div>                            
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

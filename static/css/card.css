@@ -1,0 +1,82 @@
+.row{
+    padding: 5px;
+}
+
+
+
+.counter{
+    color: #eb3b5a;
+    font-family: 'Muli', sans-serif;
+    width: 160px;
+    height: 200px;
+    text-align:center;
+    border-radius: 50%;
+    padding: 100px 50px 50px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.counter:before,
+.counter:after{
+    content: "";
+    background: #fff;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    box-shadow: -5px 5px 5px rgba(0,0,0,0.3);
+    transform: translateX(-50%)translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+.counter:after{
+    background: linear-gradient(45deg,#fa0a4e 49%, #eb5c74 50%);
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    transform: translate(0);
+    top: 0;
+    left: 0;
+    z-index: -2;
+    clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+}
+.counter .counter-icon{
+    color: rgb(212, 17, 17);
+    background: linear-gradient(45deg,#bbb9b9 49%, #ebe4e5 50%);
+    font-size: 33px;
+    line-height: 70px;
+    width: 45px;
+    height: 60px;
+    border-radius:100%;
+    position: absolute;
+    top:  0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.counter .counter-icon i.fa{
+    transform: rotateX(0deg);
+    transition: all 0.3s ease 0s;
+}
+.counter:hover .counter-icon i.fa{ transform: rotateX(360deg); }
+.counter h3{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+    
+}
+.counter .counter-value{
+    font-size: 25px;
+    font-weight: 500;
+}
+.counter.red{ color: #FF0000; }
+.counter.red:after,
+.counter.red.counter-icon{
+    background: linear-gradient(30deg,#e21414 49%,#db2020 50%);
+}
+
+@media screen and (max-width:500px){
+    .counter{ margin-bottom: 100px; }
+}

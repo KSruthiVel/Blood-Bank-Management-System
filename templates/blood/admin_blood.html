@@ -1,0 +1,131 @@
+{% extends 'blood/adminbase.html' %}
+{% block content %}
+{% load widget_tweaks %}
+{%load static%}
+<style>
+  .xyz{
+
+display: table;
+margin-right: auto;
+margin-left: auto;
+  }
+</style>
+<link href="{% static "css/card.css" %}"rel="stylesheet" media="all">
+
+</head>
+<br><br>
+<div class="container">
+<div class="row">
+    <div class="col-sm-3">
+        <div class="counter">
+            <div class="counter-icon">
+                <i class="fa fa-tint"></i>
+            </div>
+            
+            
+            <h3>A+</h3>
+            <span class="counter-value">{{A1.unit}} U</span>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="counter orange">
+            <div class="counter-icon">
+                <i class="fa fa-tint"></i>
+            </div>
+            
+            <h3>O+</h3>
+            <span class="counter-value">{{O1.unit}} U</span>
+        </div>
+    </div>
+  <div class="col-sm-3">
+        <div class="counter orange">
+            <div class="counter-icon">
+                <i class="fa fa-tint"></i>
+            </div>
+            <h3>B+</h3>
+            <span class="counter-value">{{B1.unit}} U</span>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="counter orange">
+            <div class="counter-icon">
+                <i class="fa fa-tint"></i>
+            </div>
+            <h3>AB+</h3>
+            <span class="counter-value">{{AB1.unit}} U</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="counter">
+            <div class="counter-icon">
+                <i class="fa fa-tint"></i>
+            </div>
+            <h3>A-</h3>
+            <span class="counter-value">{{A2.unit}} U</span>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="counter orange">
+            <div class="counter-icon">
+                <i class="fa fa-tint"></i>
+            </div>
+            <h3>O-</h3>
+            <span class="counter-value">{{O2.unit}} U</span>
+        </div>
+    </div>
+  <div class="col-sm-3">
+        <div class="counter orange">
+            <div class="counter-icon">
+                <i class="fa fa-tint"></i>
+            </div>
+            <h3>B-</h3>
+            <span class="counter-value">{{B2.unit}} U</span>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="counter orange">
+            <div class="counter-icon">
+                <i class="fa fa-tint"></i>
+            </div>
+            <h3>AB-</h3>
+            <span class="counter-value">{{AB2.unit}} U</span>
+        </div>
+    </div>
+
+</div>
+<hr>
+<br>
+<h3 class="text-center" style="font-family: 'Merriweather', serif; font-size: 40px; font-weight: bold; color: black;">Update Blood Unit</h3><br>
+<div class="xyz">
+
+    <form class="form-inline" method="POST">
+        {% csrf_token %}
+        <div class="form-group mx-sm-3 mb-6">
+
+            <select name="bloodgroup" class="form-control">
+                <option disabled="disabled" selected="selected">Choose Blood Group</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+          </div>
+        <div class="form-group mx-sm-3 mb-6">
+
+          <input type="number" class="form-control" name="unit" placeholder="Unit">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2" style="background-color:#004d00 ; font-weight: bold;">Update</button>
+      </form>
+</div>
+</div>
+
+
+{% endblock content %}

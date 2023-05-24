@@ -1,0 +1,144 @@
+{%load static%}
+{% load widget_tweaks %}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+ 
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Main CSS-->
+    <style>
+        .form-row .name {
+            width: 125px;
+            color: black;
+            font-size: 18px;
+            font-weight: 550;
+    }
+    </style>
+    <link href="{% static "css/main.css" %}"rel="stylesheet" media="all">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    {% include "blood/navbar.html" %}
+
+
+
+
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50" style="background-image: url(https://wallpaperaccess.com/full/697539.jpg);">
+        <div class="wrapper wrapper--w790">
+            <br><br><br>
+            <div class="card card-5">
+                <div class="card-heading" style="background-color: #CD5C5C;">
+                    <h2 class="title" style="font-family: 'Merriweather', serif; font-size: 30px;">Donor Signup</h2>
+                </div>
+                <div class="card-body" style="opacity:0.8; background-color:#ffcccc;">
+                    <form method="POST" autocomplete="off" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+                        <div class="form-row">
+                            <div class="name">First Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {% render_field userForm.first_name|attr:'required:true'  class="input--style-5"  %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Last Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {% render_field userForm.last_name|attr:'required:true'  class="input--style-5"  %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Username</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {% render_field userForm.username|attr:'required:true'  class="input--style-5"  %}
+                                </div>
+                            </div>
+                        </div>
+  
+                        <div class="form-row">
+                            <div class="name">Password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {% render_field userForm.password|attr:'required:true'  class="input--style-5"  %}
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="form-row">
+                            <div class="name">Blood Group</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="bloodgroup">
+                                            <option disabled="disabled" selected="selected" style="width: 300px; height: 50px; background-color: #e5e5e5; font-size: 16px;">Choose option</option>
+                                            <option>O+</option>
+                                            <option>O-</option>
+                                            <option>A+</option>
+                                            <option>A-</option>
+                                            <option>B+</option>
+                                            <option>B-</option>
+                                            <option>AB+</option>
+                                            <option>AB-</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-row">
+                            <div class="name">City</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {% render_field donorForm.address|attr:'required:true'  class="input--style-5"  %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Mobile</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    {% render_field donorForm.mobile|attr:'required:true'  class="input--style-5"  %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="btn btn--radius-2 btn-danger" type="submit" style="width: 100px; margin-left: 300px;">Register</button>
+                        </div>
+                    </form>
+                    <br>
+                    <p style="text-align: center;">Already have an account ? <a style="text-decoration: none;" href="/donor/donorlogin">Click here to login</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% include "blood/footer.html" %}
+
+
+  </body>
+</html>

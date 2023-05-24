@@ -1,0 +1,105 @@
+{% extends 'patient/patientbase.html' %}
+{% block content %}
+{% load widget_tweaks %}
+{%load static%}
+<head>
+        <!-- Font special for pages-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+        <!-- Main CSS-->
+        <style>
+            .form-row .name {
+                width: 125px;
+                color: black;
+                font-size: 18px;
+                font-weight: 550;
+        }
+        </style>
+    
+        <link href="{% static "css/main.css" %}"rel="stylesheet" media="all">
+</head>
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50" style="background-image: url(https://wallpaperaccess.com/full/697539.jpg);" >
+    <div class="wrapper wrapper--w790">
+      
+        <div style="margin-left: 70px;" class="card card-5">
+            <div class="card-heading"  style="background-color: #CD5C5C;">
+                <h2 class="title" style="font-family: 'Merriweather', serif; font-size: 30px;">MAKE BLOOD REQUEST</h2>
+            </div>
+            <div class="card-body"  style="opacity:0.8; background-color:#ffcccc;">
+                <form method="POST" autocomplete="off" enctype="multipart/form-data">
+                    {% csrf_token %}
+
+                    <div class="form-row">
+                        <div class="name">Patient Name</div>
+                        <div class="value">
+                            <div class="input-group">
+                                {% render_field request_form.patient_name|attr:'required:true'  class="input--style-5"  %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Patient Age</div>
+                        <div class="value">
+                            <div class="input-group">
+                                {% render_field request_form.patient_age|attr:'required:true'  class="input--style-5"  %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Reason</div>
+                        <div class="value">
+                            <div class="input-group">
+                                {% render_field request_form.reason|attr:'required:true'  class="input--style-5"  %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Blood Group</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="bloodgroup" style="width: 300px; height: 50px; background-color: #e5e5e5; font-size: 16px;">
+                                        <option disabled="disabled" selected="selected">Choose option</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
+                                        <option>A+</option>
+                                        <option>A-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Unit (in ml)</div>
+                        <div class="value">
+                            <div class="input-group">
+                                {% render_field request_form.unit|attr:'required:true'  class="input--style-5"  %}
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div>
+                        <button class="btn btn--radius-2 btn-danger" type="submit" style="margin-left: 100px;">REQUEST</button>
+                    </div>
+                </form>
+                
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
