@@ -45,40 +45,40 @@ The Blood Bank Management System is a web-based application that streamlines the
 
 
 ## Flowchart
-![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/Flowchart.png)
+![Flowchart](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/Flowchart.png)
 
 ## Screenshots
-![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/1.png)
+![Screenshot 1](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/1.png)
 
 <h3 align="center">
 --- Patient Module ---
 </h3>
 
-![Patient Module 1](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/P1.png)
-![Patient Module 2](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/P2.png)
-![Patient Module 3](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/P3.png)
-![Patient Module 4](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/P4.png)
-![Patient Module 5](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/P5.png)
+![Patient Module 1](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/P1.png)
+![Patient Module 2](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/P2.png)
+![Patient Module 3](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/P3.png)
+![Patient Module 4](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/P4.png)
+![Patient Module 5](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/P5.png)
 
 <h3 align="center">
 --- Donor Module ---
 </h3>
 
-![Donor Module 1](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/D1.png)
-![Donor Module 2](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/D2.png)
-![Donor Module 3](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/D3.png)
-![Donor Module 4](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/D4.png)
-![Donor Module 5](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/D5.png)
-![Donor Module 6](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/D6.png)
-![Donor Module 7](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/D7.png)
+![Donor Module 1](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/D1.png)
+![Donor Module 2](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/D2.png)
+![Donor Module 3](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/D3.png)
+![Donor Module 4](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/D4.png)
+![Donor Module 5](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/D5.png)
+![Donor Module 6](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/D6.png)
+![Donor Module 7](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/D7.png)
 
 <h3 align="center">
 --- Admin Module ---
 </h3>
 
-![Admin Module 1](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/A1.png)
-![Admin Module 2](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/A2.png)
-![Admin Module 3](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/A3.png)
-![Admin Module 4](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/A4.png)
-![Admin Module 5](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/A5.png)
-![Admin Module 6](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/A6.png)
+![Admin Module 1](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/A1.png)
+![Admin Module 2](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/A2.png)
+![Admin Module 3](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/A3.png)
+![Admin Module 4](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/A4.png)
+![Admin Module 5](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/A5.png)
+![Admin Module 6](https://raw.githubusercontent.com/KSruthiVel/Blood_Bank_Management_System/main/images/A6.png)
