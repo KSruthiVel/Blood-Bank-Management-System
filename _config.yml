@@ -1,0 +1,17 @@
+title: "Blood Bank Management System"
+description: "A web-based application that connects patients, donors, and blood banks for efficient blood donation 
+and request management. Built with Django and designed to streamline the process of blood donation and request fulfillment."
+# Theme settings
+remote_theme: pages-themes/minimal@v0.2.0 # You can change this to a different theme if needed
+
+# Plugin settings
+plugins:
+  - jekyll-remote-theme # Required to use the remote theme
+  - jekyll-sitemap # Generates a sitemap for your site
+  - jekyll-seo-tag # Adds SEO tags for better search engine optimization
+  - jekyll-feed # Adds RSS feed for your site
+  - jekyll-paginate # Adds pagination to your site (useful if you have many pages or posts)
+
+# Display settings
+show_downloads: false
+show_title: false
