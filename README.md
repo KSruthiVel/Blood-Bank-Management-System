@@ -6,15 +6,47 @@
 The Blood Bank Management System is a web-based application that streamlines the blood request process by providing a centralized platform for patients, donors, and blood banks to communicate and synchronize effectively. By reducing the time and effort required by all parties involved, the proposed system ensures the timely fulfillment of blood requests, making it a practical solution for efficient blood bank management.
 </div>
 
+## Features
+#### Patient Module
+- **Registration & Login:** Patients can create an account and log in to access the system.
+- **Request Blood:** Patients can request blood of specific types and units.
+- **View Request History:** Patients can view their blood request history with statuses like pending, approved, or rejected.
+
+#### Donor Module
+- **Registration & Login:** Donors can register and log in to the system.
+- **Donate Blood:** Donors can fill out a form to donate blood, subject to approval by the admin.
+- **View Donation History:** Donors can view the history of their blood donations.
+- **Request Blood:** Donors can also request blood if needed.
+- **View Request History:** Donors can view the history of their blood requests.
+
+#### Admin Module
+- **Dashboard:** Admins can view the available blood units for each blood group, number of donors, and blood requests.
+- **Manage Donations:** Admins can approve or reject donation requests based on donor health status.
+- **Manage Blood Requests:** Admins can approve or reject blood requests from both patients and donors.
+- **Update Blood Stock:** Admins can manually update the blood stock as required.
+
 ## Tech Stack
+- **Frontend:** HTML, CSS
+- **Backend:** Django Framework (Python)
+- **Database:** SQLite
 
-**UI:** HTML, CSS
+#### System Requirements
 
-**Backend:** Django framework, Python
+- **Operating System:** Windows, Linux, or macOS
+- **Python Version:** 3.6 or higher
+- **Django Version:** 3.0.5
+
+#### Usage
+
+1. Run the Django development server:
+   ```bash
+   python manage.py runserver
+2. Open your web browser and go to http://127.0.0.1:8000 to access the application.
+
 
 ## Flowchart
 
-![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/b52d344e-f307-423f-99d0-665037eb6f0e)
+![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/blob/main/images/1.png)
 
 ## Screenshots
 
@@ -23,7 +55,7 @@ The Blood Bank Management System is a web-based application that streamlines the
 <h3 align="center">
  --- Patient Module ---
  </h4>
- 
+
 ![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/794fa793-6673-4a03-9c38-f66669ded9e6)
 ![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/5ff5cc4e-6e7d-4bd5-aad1-f3b6a8653692)
 ![image](https://github.com/KSruthiVel/Blood_Bank_Management_System/assets/68786151/361eaea6-5e6a-4939-a6a7-481ea24b72bc)
